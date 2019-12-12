@@ -1,0 +1,120 @@
+.assortment {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.assortment__wrapper {
+    width: calc(380px*3 + 10px*2);
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.assortment__item {
+    width: 380px;
+    height: 380px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 16px;
+}
+
+.assortment__image {
+    width: 220px;
+    height: 220px;
+    margin-top: 70px;
+}
+
+.assortment__text-only {
+    width: 300px;
+    font-size: 20px;
+    line-height: 31px;
+    margin-top: 130px;
+}
+
+.assortment__text {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    color: $blue;
+    text-transform: uppercase;
+}
+
+.assortment__text_margin-top {
+    margin-top: -80px;
+}
+
+.assortment__text_color_yellow {
+    color: #F9F498;
+}
+
+.assortment__item_bg-color_blue-gradient {
+    background: linear-gradient(143.74deg, #2B7199 0%, #0E2633 100%);
+}
+
+.assortment__item_bg-color_yellow-gradient {
+    background: linear-gradient(156.1deg, #FFFBBA 0%, #F9EF4B 100%);
+}
+
+@include md-new {
+    .assortment__wrapper {
+        width: auto;
+        margin: 60px 30px 0;
+    }
+
+    .assortment__item {
+        width: auto;
+        flex-basis: calc(50% - 10px);
+        height: auto;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .assortment__image {
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .assortment__text-only {
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .assortment__text {
+        margin: 0;
+    }
+
+}
+
+@include sm {
+    .assortment {
+        margin-top: 50px;
+    }
+
+    .assortment__wrapper {
+        margin: 40px 10px 0;
+    }
+
+    .assortment__item {
+        flex-basis: calc(33.33% - 5px);
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+    .assortment__image {
+        margin: 0;
+    }
+
+    .assortment__text-only {
+        font-size: 10px;
+        margin: 0;
+        display: none;
+    }
+
+    .assortment__text {
+        font-size: 12px;
+        line-height: 100%;
+    }
+}

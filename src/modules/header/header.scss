@@ -1,0 +1,144 @@
+.header {
+    position: relative;
+}
+
+.header__wrapper {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background: white;
+    z-index: 10;
+}
+
+.header__container {
+    filter: drop-shadow(0px 5px 2px rgba(50, 50, 0, 0.5));
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    z-index: 10;
+}
+
+.header__skew {
+    width: 100%;
+    height: 50px;
+    background: white;
+    clip-path: polygon(100% 60%, 0% 5%, 0% 0%, 100% 0%);
+    z-index: 10;
+}
+
+.header__panel {   
+    width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 40px;
+    box-sizing: border-box;    
+}
+
+.header__menu {
+    margin-right: 50px;
+}
+
+.header__link {
+    width: 265px;
+    margin-right: auto;
+}
+
+.header__button {
+    display: none;
+    position: absolute;
+}
+
+.header__discript {
+    display: none;
+}
+
+@include md-new {   
+
+    .header__panel {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__container {
+        display: none;
+    }
+
+    .header__wrapper {
+        width: 50%;
+        height: auto;
+        border: 3px solid $blue;
+        border-radius: 15px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .header__menu {
+        margin: 0;
+    }
+
+    .header__wrapper_opened {
+        position: absolute;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header__button {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 20;
+
+        &-item {
+            background: black;
+        }
+    }
+
+    .header__link {
+        margin: 0;
+    }
+}
+
+@include sm {
+    .header__discript {
+        display: block;
+    }
+
+    .header__link {
+        width: 150px;
+    }
+
+    .header__panel {
+        padding-top: 10px;
+    }
+
+    .header__wrapper {
+        top: 5px;
+        left: 5px;
+    }
+
+    .header__menu {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .header__button {
+
+        &-item {
+            background: $blue;
+        }
+    }
+}
+
+

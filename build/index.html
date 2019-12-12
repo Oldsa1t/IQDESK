@@ -5,43 +5,344 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Artour</title>
+    <title>IQdesk</title>
 </head>
 <body class="page">
 
     <header class="header">
 
-    <section class="header__menu">
-        @@include ("./logo/logo.html")    
-
-        @@inclide ("./menu/menu.html")
+        <button class="button header__button">
+    <div class="button__item header__button-item"></div>
+    <div class="button__item header__button-item"></div>
+    <div class="button__item header__button-item"></div>
+</button>
     
-        @@include ("./link/link.html")
-    </section>
+    <div class="header__wrapper">
 
-    @@include ("../header/discript/discript.html")    
+        <section class="header__panel">  
+            <div class="logo">
+    <img class="image" src="./assets/img/logo.png" alt="Logo">
+</div>
+
+            <nav class="menu header__menu">
+    <ul class="menu__list">
+        <li class="menu__item">
+            <a class="menu__link" href="index.html">דף הבית</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="portfolio.html">פורטפוליו</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="index.html#clients">לקוחות</a>
+        </li>
+    </ul>
+</nav>
+
+            <a class="link link_bg-color_orange header__link" href="#form">יש לי רעיון לאפליקצייה</a>
+        </section>
+
+    </div>
+    
+    <div class="header__container">
+        <div class="header__skew"></div>
+    </div>    
+
+    <section class="discript @@class">
+
+    <div class="discript__wrapper">
+        <h1 class="title title__h1 discript__title"> פיתוח אפליקציות לאייפון ואנדרואיד </h1>
+
+        <p class="text discript__text"> חשיבה מחוץ לקופסא, איפיון טכני מלא, פיתוח נייטיב מהיר ומקצועי וליווי בתהליך עד שליחת האפליקצייה לחנויות! <br>בא לנו לקודד את הרעיון שלך :] </p>
+        
+        <a class="link link link_bg-color_blue discript__link" href="#form">דברו איתי</a>
+        
+    </div>    
+
+</section>
 
 </header>
 
-    <main class="main">
+    <main class="main">    
 
-    @@include ("./advantages/advantages.html")
+    <section class="advantages">
 
-    @@include ("./assortment/assortment.html")
+    <div class="advantages__skew-top"></div>
 
-    @@include ("./feedback/feedback.html")
+    <h3 class="title title__h3 advantages__title">
+    <p class="text title__text">למה דווקא</p>          
+    IQ<span class="text_exo">DESK</span> ?
+</h3>        
 
-    @@include ("./contact/contact.html")
+    <div class="advantages__wrapper">
+
+        <div class="advantages__item">
+            <div class="advantages__image">
+               <img class="image" src="./assets/img/innovation_icon.svg" alt="">
+            </div>
+            <h4 class="title title__h4 title_color_yellow advantages__sub-title">חדשנות</h4> 
+            <p class="text advantages__text">פיתוח תוכנה ופיתוח אפליקציות אלה דברים מורכבים הדורשים חשיבה מרובה על איך להעביר מקסימום מידע במינימום זמן. אנחנו תמיד בוחנים ומפתחים על פי החידושים האחרונים בעולם הפיתוח</p>
+        </div>
+
+        <div class="advantages__item">
+            <div class="advantages__image">
+                <img class="image" src="./assets/img/quality_icon.svg" alt="">
+            </div>
+            <h4 class="title title__h4 title_color_yellow advantages__sub-title">איכות</h4>            
+            <p class="text advantages__text">התוכנות שאנחנו בונים והאפליקציות משמשות את החברות המובילות במשק ומפותחות בצורה גמישה שמאפשרת פיתוחים עתידיים</p>
+        </div>
+
+        <div class="advantages__item">
+            <div class="advantages__image">
+                <img class="image" src="./assets/img/unique_icon.svg" alt="">
+            </div>
+            <h4 class="title title__h4 title_color_yellow advantages__sub-title">ייחודיות</h4> 
+            <p class="text advantages__text">אנחנו חושבים שונה. תמיד נעזור לכם למצוא את הערך המוסף שיבדל אותכם מהמתחרים ויציב אותכם בקדמת הבמה.</p>
+        </div>
+
+        <div class="advantages__item">
+            <div class="advantages__image">
+                <img class="image" src="./assets/img/friendly_icon.svg" alt="">
+            </div>
+            <h4 class="title title__h4 title_color_yellow advantages__sub-title">חברותיים</h4> 
+            <p class="text advantages__text">אנחנו עובדים צמוד ללקוחות שלנו בצורה חברותית ונעימה. תמיד קשובים לדרישות הלקוח ושמחים לעזור.</p>
+        </div>        
+
+    </div>    
+
+    <div class="advantages__skew-bottom"></div>
+
+</section>
+
+    <section class="results">    
+
+    <h2 class="title title__h2 reults__title">תוצאות מדברות בעד עצמן</h2>
+
+    <p class="text results__text">פיתוח לעסקים קטנים או לחברות גדולות - של אתרים, אפליקציות מובייל ואף תוכנות מותאמות אישית - הכל נעשה בדייקנות, מקצועיות - והכי חשוב, בהקשבה וליווי מוחלט של הגשמת היעדים שלך</p>
+
+    <div class="slider results__slider">
+
+    <div class="slider__unit">
+        <div class="slider__image">
+            <img class="image" src="./assets/img/slide_1.png" alt="">
+        </div>
+
+        <div class="slider__image">
+            <img class="image" src="./assets/img/slide_2.png" alt="">
+        </div>
+        
+        <div class="slider__image">
+            <img class="image" src="./assets/img/slide_3.png" alt="">
+        </div>
+    </div>
+
+</div>
+
+    <div class="results__arrows">
+        <div class="results__arrow-left">
+            <img class="image" src="./assets/img/arrow.svg" alt="">
+        </div>
+        <div class="results__arrow-right">
+            <img class="image" src="./assets/img/arrow.svg" alt="">
+        </div>
+    </div>    
+
+    <a class="link link link_bg-color_orange results__link" href="@@href">כל הפרויקטים  >></a>
+
+</section>
+
+    <section class="assortment">
+
+    <h2 class="title title__h2 @@class">מה אנחנו יכולים לעשות עבורך?</h2>
+
+    <div class="assortment__wrapper">
+
+        <div class="assortment__item assortment__item_bg-color_blue-gradient">  
+            <p class="text assortment__text-only assortment__text_color_yellow">לורם איפסום יעכג יגמצנכ מחנכנ נחיו יחגחינך לכנדלחגנ חיגחדיההגח ילחיגךחגךלחד חידג יחיד חידג חיך שחידגךן םן׳םןם ׳ יוט׳עידע דפםן]ם דםןו ׳ום.</p>  
+        </div>
+
+        <div class="assortment__item assortment__item_bg-color_yellow-gradient">
+            <div class="assortment__image">
+                <img class="image" src="./assets/img/web_icon.svg" alt="">
+            </div>
+            <p class="text assortment__text">Web</p>
+        </div>
+
+        <div class="assortment__item assortment__item_bg-color_yellow-gradient">
+            <div class="assortment__image">
+                <img class="image" src="./assets/img/mobile_icon.svg" alt="">
+            </div>
+            <p class="text assortment__text">Mobile</p>
+        </div>
+
+        <div class="assortment__item assortment__item_bg-color_yellow-gradient">
+            <div class="assortment__image">
+                <img class="image" src="./assets/img/globes_icon.svg" alt="">
+            </div>
+            <p class="text assortment__text assortment__text_margin-top">מיקור חוץ</p>
+        </div>
+
+        <div class="assortment__item assortment__item_bg-color_yellow-gradient">
+            <div class="assortment__image">
+                <img class="image" src="./assets/img/qa_icon.svg" alt="">
+            </div>
+            <p class="text assortment__text assortment__text_margin-top">בדיקות QA</p>
+        </div>
+
+        <div class="assortment__item assortment__item_bg-color_yellow-gradient">
+            <div class="assortment__image">
+                <img class="image" src="./assets/img/techconsul_icon.svg" alt="">
+            </div>
+            <p class="text assortment__text assortment__text_margin-top">ייעוץ טכנולוגי</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <section class="feedback">
+
+    <h2 class="title title__h2 feedback__title">מה הלקוחות שלנו אומרים עלינו…?</h2>
+
+    <div class="slider feedback__slider">
+
+    <div class="slider__item">
+        <div class="slider__avatar">
+            <img class="image image__avatar" src="./assets/img/man.png" alt="">
+        </div>
+
+        <p class="text slider__text-top"> <b>ר איתמר בוצר</b><br> אורטופד ספורט מנתח</p>
+
+        <p class="text slider__text">״לורם איפסום יעכג יגמצנכ מחנכנ נחיו יחגחינך לכנדלחגנ חיגחדיההגח ילחיגךחגךלחד חידג יחיד חידג חיך שחידגךן םן׳םןם ׳ יוט׳עידע דפםן]ם דםןו ׳ום/ ] </p>
+
+        <div class="slider__stars">
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="slider__item">
+        <div class="slider__avatar">
+            <img class="image image__avatar" src="./assets/img/woman.png" alt="">
+        </div>
+
+        <p class="text slider__text-top"><b>לנה רוזנברג</b><br> לנה רוזנברג</p>
+
+        <p class="text slider__text">״לורם איפסום יעכג יגמצנכ מחנכנ נחיו יחגחינך לכנדלחגנ חיגחדיההגח ילחיגךחגךלחד חידג יחיד חידג חיך שחידגךן םן׳םןם ׳ יוט׳עידע דפםן]ם דםןו ׳ום/ ]   </p>
+
+        <div class="slider__stars">
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+            <div class="slider__star"><img class="image" src="./assets/img/star.svg" alt=""></div>
+        </div>           
+    </div>
+
+</div>
+
+    <div class="feedback__arrows">
+        <div class="feedback__arrow-left">
+            <img class="image" src="./assets/img/arrow.svg" alt="">
+        </div>
+        <div class="feedback__arrow-right">
+            <img class="image" src="./assets/img/arrow.svg" alt="">
+        </div>
+    </div>  
+
+</section>
+
+    <section class="success">
+
+    <h2 class="title title__h2 success__title">ההצלחה שלך היא ההצלחה שלנו</h2>
+
+    <p class="text success__text">אנחנו פה לטווח הארוך. ישנם לקוחות שעובדים איתנו כבר מעל שמונה שנים ועדיין ממשיכים לפתח את המוצר אצלנו מבין לקוחותינו</p>
+
+    <div class="clients success__client" id="clients">
+    <div class="clients__wrapper">
+        <img class="image clients__image" src="../assets/img/client_1.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_2.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_3.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_4.png" alt="">
+    </div>
+    <div class="clients__wrapper">
+        <img class="image clients__image" src="../assets/img/client_1.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_2.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_3.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_4.png" alt="">
+    </div>
+    <div class="clients__wrapper">
+        <img class="image clients__image" src="../assets/img/client_1.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_2.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_3.png" alt="">
+        <img class="image clients__image" src="../assets/img/client_4.png" alt="">
+    </div>
+</div>
+
+    <a class="link link link_bg-color_orange success__link" href="@@href">עוד לקוחות >></a>
+
+</section>
+
+    <section class="contact">
+
+    <div class="development @@class">
+    <div class="development__soft">
+        <div class="development__wrapper">
+            <h5 class="title title__h5 development__title development__title-soft">פיתוח תוכנה מותאמת אישית לעסקים</h5>
+            <ul class="development__list">
+                <li class="development__item">
+                    שנים של ניסיון בפיתוח מערכות ניהול לעסקים מבוססות ענן. 
+                </li>
+                <li class="development__item">
+                    התוכנות שלנו מותאמות אישית לצרכי העסק שלכם
+                </li>
+                <li class="development__item">
+                    בעזרת התוכנות שלנו עסקים משפרים את יעילות העבודה ומוכרים יותר
+                </li>
+            </ul>
+        </div>        
+    </div>
+
+    <div class="development__app">
+        <div class="development__wrapper">
+            <h5 class="title title__h5 development__title development__title-app">פיתוח אפליקציות לעסקים</h5>
+            <ul class="development__list">
+                <li class="development__item">
+                    איפיון טכני מלא! הצוות המקצועי שלנו ישב עמך ויכתוב ספר איפיון טכני
+                </li>
+                <li class="development__item">
+                    פיתוח גירסאות אייפון ואנדרואיד. פיתוח נייטיב מהיר ומקצועי
+                </li>
+                <li class="development__item">
+                    שליחה לחנויות! אנחנו נטפל בכל מה שנודע להתנהלות מול אפל וגוגל
+                </li>
+            </ul>
+        </div>        
+    </div>
+</div>
+
+    <form class="form" id="form" action=""> <!--  Класс добавить-->
+    <p class="text form__text">רוצה לדעת עוד? אפשר למלא כאן את הפרטים ונשמח לחזור אליך בהקדם</p>
+    <input class="form__input form__name" type="text" placeholder="שם מלא">
+    <input class="form__input form__email" type="email" placeholder="מייל">
+    <input class="form__input form__tel" type="tel" placeholder="נייד">
+    <input class="form__input form__company" type="text" placeholder="חברה (אופציונלי)">
+    <button class="link link_bg-color_orange form__btn">כן, דברו איתי</button>
+</form>
+
+</section>
 
 </main>
 
     <footer class="footer">
-    <div class="footer__image">
-        <img class="image" src="" alt="">
-    </div>
+    <div class="footer__wrapper">        
+        <p class="text text_exo footer__text">IQ<span class="footer__span">DESK</span></p> 
+    </div>    
 </footer>
     
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,134 @@
+.slider__unit {
+    width: calc(300px*3 + 24px*2);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.slider__image {
+    width: 300px;
+}
+
+.slider__item {
+    width: 475px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.32);
+    padding-right: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        bottom: 10px;
+        left: 50px;
+        background: url(../img/quote.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.slider__avatar {
+    width: 124px;
+    height: 124px;
+    border: 19px solid white;  
+    background: white;
+    margin-top: -130px;
+    margin-right: -20px;
+}
+
+.image__avatar {
+    clip-path: circle(50%);
+}
+
+.slider__text {
+    margin-top: 20px;
+}
+
+.slider__text-top {
+    font-size: 20px;
+}
+
+.slider__stars {
+    width: calc(91px + 25px + 25px);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.slider__star {
+    width: 25px;
+    height: 25px;
+}
+
+@include md-new {
+    .slider__image:first-child {
+        display: none;
+    }
+
+    .slider__image {
+        width: auto;
+        flex-basis: 45%;
+    }
+
+    .slider__unit {
+        width: auto;
+        margin: 0 80px 0;
+    }
+
+    .slider__item {
+        margin: 0 auto; 
+    }
+}
+
+@include sm {
+    .slider__unit {
+        margin: 0 35px 0;
+    }
+
+    .slider__image {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .slider__item {
+        width: 80%;
+
+        &::before {
+            width: 35px;
+            height: 35px;
+            left: 20px;
+        }
+    }
+
+    .slider__avatar {
+        width: 72px;
+        height: 72px;
+        margin-top: -80px;
+    }
+
+    .slider__item:first-child {
+        display: none;
+    }
+
+    .slider__text-top {
+        font-size: 16px;
+    }
+
+    .slider__text {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .slider__stars {
+        width: 90px;
+        margin-top: 30px;
+    }
+
+    .slider__star {
+        width: 15px;
+        height: 15px;        
+    }
+    
+}

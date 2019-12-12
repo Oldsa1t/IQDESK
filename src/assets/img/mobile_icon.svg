@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="185px" viewBox="0 0 223 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>A4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4" transform="translate(-172.000000, -201.000000)" fill="#245D7F" fill-rule="nonzero">
+            <g id="smartphone" transform="translate(248.000000, 237.000000)">
+                <path d="M63.9,0 L7.1,0 C3.17877828,-2.40105582e-16 0,3.17877828 0,7.1 L0,106.5 C0,110.421222 3.17877828,113.6 7.1,113.6 L63.9,113.6 C67.8212217,113.6 71,110.421222 71,106.5 L71,7.1 C71,3.17877828 67.8212217,2.40105582e-16 63.9,0 Z M35.5,106.5 C31.5787783,106.5 28.4,103.321222 28.4,99.4 C28.4,95.4787783 31.5787783,92.3 35.5,92.3 C39.4212217,92.3 42.6,95.4787783 42.6,99.4 C42.6,103.321222 39.4212217,106.5 35.5,106.5 Z M63.9,85.2 L7.1,85.2 L7.1,14.2 L63.9,14.2 L63.9,85.2 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

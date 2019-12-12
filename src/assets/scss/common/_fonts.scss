@@ -21,3 +21,19 @@
 	font-style: normal;;
 	font-weight: 700;
 }
+
+@font-face {
+	font-family: "Exo";
+	src: local("Exo-Rgular"), url("../fonts/Exo-Regular.woff2") format("woff2"), url("../fonts/Exo-Regular.woff") format("woff");
+	font-display: swap;
+	font-style: normal;;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Exo";
+	src: local("Exo-Black"), url("../fonts/Exo-Black.woff2") format("woff2"), url("../fonts/Exo-Black.woff") format("woff");
+	font-display: swap;
+	font-style: normal;;
+	font-weight: 900;
+}

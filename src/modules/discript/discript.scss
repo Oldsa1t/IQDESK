@@ -1,0 +1,69 @@
+.discript {
+    width: 100%;
+    height: 530px;
+    background: url(../img/bg_1920.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.discript__wrapper {
+    width: 720px;
+    margin: 50px auto 0;
+}
+
+.discript__title {
+    margin-top: 80px;
+}
+
+.discript__text {
+    font-size: 26px;
+    line-height: 44px;
+    font-weight: 500;
+    margin-top: 10px;
+    
+}
+
+.discript__link {
+    width: 250px;
+    margin: 40px auto 0;
+}
+
+@include md-new {
+    .discript {
+        margin-top: 0;
+        background: url(../img/bg_1200.jpg);
+    }
+
+    .discript__title {
+        margin-top: 70px;
+    }
+
+    .discript__wrapper {
+        width: auto;
+        margin: 50px 50px 0;
+    }
+}
+
+@include sm {
+    .discript {
+        background: url(../img/bg_1000.jpg);
+        padding: 10px 0 100px;
+        height: auto;
+    }
+
+    .discript__title {
+        margin-top: 20px;
+    }
+
+    .discript__text {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .discript__link {
+        width: 150px;
+        margin-top: 20px;
+    }
+}

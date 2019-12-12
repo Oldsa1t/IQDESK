@@ -1,0 +1,37 @@
+.menu__list {
+    width: calc(260px + 80px + 90px);
+    @include undone-list;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.menu__link {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+@include md-new {
+    .menu__list {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        line-height: 100px;
+    }
+
+    .menu__link {
+        color: $blue;
+    }
+}
+
+@include sm {
+    .menu__list {
+        line-height: 50px;
+    }
+
+    .menu__link {
+        font-size: 16px;
+    }
+}

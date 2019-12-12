@@ -1,0 +1,28 @@
+.link {
+    height: 40px;
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;    
+    display: block;
+    border-radius: 20px;
+}
+
+.link_bg-color_orange {
+    background: $orange;
+}
+
+.link_bg-color_blue {
+    background: $blue;
+}
+
+@include sm {
+    .link {
+        height: 25px;
+        line-height: 25px;
+        font-size: 16px;
+    }
+}
+

@@ -1,0 +1,15 @@
+<div class="item @@class">
+    <div class="item__image">
+        <img class="image" src="@@src" alt="">
+    </div>
+
+    @@include('./title/title__h5.html', {
+        "text": "@@title",
+        "class": "item__title"
+    })
+
+    @@include('./text/text.html', {
+        "text": "@@text",
+        "class": "item__text"   
+    })
+</div>

@@ -1,0 +1,20 @@
+.contact {
+    background: url(../img/bg-bottom_1920.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 13px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+}
+
+@include md-new {
+    .contact {
+        background: url(../img/bg-bottom_1200.jpg);
+    }    
+}
+
+@include sm {
+    .contact {
+        background: url(../img/bg-bottom_1000.jpg);
+    }
+}

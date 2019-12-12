@@ -1,21 +1,31 @@
 @import 'import/mixins';
 @import 'import/variables';
-@import 'import/fonts';
 
+@import 'common/fonts';
 @import 'common/iconfont';
+@import 'common/template';
 
-@import 'common/title';
-@import 'common/logo';
-@import 'common/language';
-@import 'common/buttons';
-@import 'common/menu';
-@import 'common/advantages';
-@import 'common/about-us';
-@import 'common/technology';
-@import 'common/member';
-@import 'common/bottom-menu';
-@import 'common/bottom-panel';
-@import 'common/social';
-@import 'common/header';
-@import 'common/main';
-@import 'common/footer';
+@import '../../modules/logo/logo';
+@import '../../modules/text/text';
+@import '../../modules/title/title';
+
+@import '../../modules/link/link';
+@import '../../modules/item/item';
+@import '../../modules/button/button.scss';
+@import '../../modules/slider/slider';
+
+@import '../../modules/header/header';
+@import '../../modules/menu/menu';
+@import '../../modules/discript/discript.scss';
+@import '../../modules/advantages/advantages.scss';
+@import '../../modules/results/results';
+@import '../../modules/assortment/assortment.scss';
+@import '../../modules/feedback/feedback';
+@import '../../modules/success/success';
+@import '../../modules/clients/clients.scss';
+@import '../../modules/contact/contacts.scss';
+@import '../../modules/development/development.scss';
+@import '../../modules/form/form';
+@import '../../modules/projects/projects';
+@import '../../modules/switch/switch';
+@import '../../modules/footer/footer';

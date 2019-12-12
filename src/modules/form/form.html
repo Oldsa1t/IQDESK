@@ -1,0 +1,11 @@
+<form class="form" id="form" action=""> <!--  Класс добавить-->
+    @@include('./text/text.html', {
+        "text": "רוצה לדעת עוד? אפשר למלא כאן את הפרטים ונשמח לחזור אליך בהקדם",
+        "class": "form__text"
+    })
+    <input class="form__input form__name" type="text" placeholder="שם מלא">
+    <input class="form__input form__email" type="email" placeholder="מייל">
+    <input class="form__input form__tel" type="tel" placeholder="נייד">
+    <input class="form__input form__company" type="text" placeholder="חברה (אופציונלי)">
+    <button class="link link_bg-color_orange form__btn">כן, דברו איתי</button>
+</form>

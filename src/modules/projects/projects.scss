@@ -1,0 +1,37 @@
+.projects__list {
+    width: calc(500px*2 + 80px);
+    margin: 220px auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.projects__list_visibility_hidden {    
+    display: none;
+}
+
+.projects__development {
+    display: none;
+}
+
+@include md-new {
+    .projects__list {
+        width: auto;
+        margin: 180px 30px 50px;
+    }
+
+    .projects__item {
+        flex-basis: calc(50% - 30px*3);
+    }
+}
+
+@include sm {
+    .projects__item {
+        flex-basis: calc(100% - 30px);
+    }
+
+    .projects__list {
+        margin: 120px 15px 50px;
+    }
+}

@@ -1,13 +1,34 @@
 <header class="header">
 
-    <section class="header__menu">
-        @@include ("./logo/logo.html")    
-
-        @@inclide ("./menu/menu.html")
+        @@include('./button/button.html', {
+            "class": "header__button",
+            "sub-class": "header__button-item"
+        })
     
-        @@include ("./link/link.html")
-    </section>
+    <div class="header__wrapper">
 
-    @@include ("../header/discript/discript.html")    
+        <section class="header__panel">  
+            @@include('./logo/logo.html')
+
+            @@include('./menu/menu.html', {
+                "class": "header__menu"
+            })
+
+            @@include('./link/link.html', {
+                "class": "link_bg-color_orange header__link",
+                "text": "יש לי רעיון לאפליקצייה",
+                "href": "#form"
+            })
+        </section>
+
+    </div>
+    
+    <div class="header__container">
+        <div class="header__skew"></div>
+    </div>    
+
+    @@include('./discript/discript.html', {
+        "class": "@@class"
+    })
 
 </header>
