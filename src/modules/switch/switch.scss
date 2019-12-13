@@ -45,9 +45,7 @@
     transform: translate(-50%);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 19px;
-    line-height: 26px;
+    align-items: center;    
 }
 
 .switch__image {
@@ -55,10 +53,14 @@
 }
 
 .switch__item {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    font-size: 19px;
+    line-height: normal;
 }
 
 .switch__item_active {
@@ -69,42 +71,48 @@
 .switch__laptop {
     width: 103px;
     height: 103px;
-    background: url(../img/web_ic.svg) no-repeat;
+    background: url(../img/web_ic.png) no-repeat;
+    background-size: contain;
     background-position: center;
 }
 
 .switch__laptop_active {
-    width: 180px;
-    height: 180px;
-    background: url(../img/web_ic_chosen.svg) no-repeat;
+    width: 162px;
+    height: 162px;
+    background: url(../img/web_ic_chosen.png) no-repeat;
+    background-size: contain;
     background-position: center;
 }
 
 .switch__phone {
     width: 103px;
     height: 103px;
-    background: url(../img/mobile_ic.svg) no-repeat;
+    background: url(../img/mobile_ic.png) no-repeat;
+    background-size: contain;
     background-position: center;
 }
 
 .switch__phone_active {
     width: 162px;
     height: 162px;
-    background: url(../img/mobile_ic_chosen.svg) no-repeat;
+    background: url(../img/mobile_ic_chosen.png) no-repeat;
+    background-size: contain;
     background-position: center;
 }
 
 .switch__soft {
     width: 103px;
     height: 103px;
-    background: url(../img/crm_ic.svg) no-repeat;
+    background: url(../img/crm_ic.png) no-repeat;
+    background-size: contain;
     background-position: center;
 }
 
 .switch__soft_active {
     width: 162px;
     height: 162px;
-    background: url(../img/crm_ic_chosen.svg) no-repeat;
+    background: url(../img/crm_ic_chosen.png) no-repeat;
+    background-size: contain;
     background-size: contain;
     background-position: center;
 }
@@ -132,9 +140,10 @@
     }
 
     .switch__list {
-        width: 80%;
-        bottom: -90px;
+        width: 90%;
+        bottom: -80px;
         align-items: flex-start;
+        justify-content: space-between;
     }
 
     .switch__item {
@@ -145,20 +154,16 @@
         }
     }
 
-    .switch__image {
-        margin: 0;
-    }
-
     .switch__laptop,
     .switch__phone,
     .switch__soft {
-        width: 90px;
-        height: 90px;
+        width: 60px;
+        height: 60px;
         background-size: contain;
 
         &_active {
-            width: 110px;
-            height: 110px;
+            width: 80px;
+            height: 80px;
             background-size: contain;
         }
     }

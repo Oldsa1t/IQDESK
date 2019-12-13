@@ -28,7 +28,7 @@
 
 @include sm {
     .projects__item {
-        flex-basis: calc(100% - 30px);
+        flex-basis: 100%;
     }
 
     .projects__list {

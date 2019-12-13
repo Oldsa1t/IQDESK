@@ -8,13 +8,15 @@
 
 .advantages__title {    
     z-index: 10;
+    position: relative;
 }
 
 .advantages__sub-title {    
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .advantages__text {
+    margin-top: 7px;
     line-height: 26px;
 }
 
@@ -24,6 +26,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
 }
 
 .advantages__item {
@@ -112,6 +116,9 @@
 }
 
 @include sm {
+    .advantages {
+        padding-top: 30px;
+    }
     .advantages__wrapper {
         margin-top: 30px;
     }
@@ -132,7 +139,8 @@
 
     .advantages__skew-top {
         height: 40px;
-        top: -20px;
+        top: -10px;
+        transform: skew(0, 0);
 
         &::before {
             height: 30px;

@@ -5,31 +5,31 @@
             "class": "switch__title"
         })
     
-        <ul class="switch__list">
-            <li class="switch__item switch__item_active">
-                <div class="switch__image switch__laptop switch__laptop_active">
+        <div class="switch__list">
+            <button class="button switch__item">
+                <div class="switch__image switch__laptop">
                 </div>
                 @@include('./text/text.html', {
                     "text": "אתרי אינטרנט ",
                     "class": "switch__text"
                 })                 
-            </li>
-            <li class="switch__item">
+            </button>
+            <button class="button switch__item">
                 <div class="switch__image switch__phone">
                 </div>
                 @@include('./text/text.html', {
                     "text": "אפליקציות",
                     "class": "switch__text"
                 })                   
-            </li>
-            <li class="switch__item">
+            </button>
+            <button class="button switch__item">
                 <div class="switch__image switch__soft">
                 </div>
                 @@include('./text/text.html', {
                     "text": "תוכנות מואמות אישית",
                     "class": "switch__text"
                 })                
-            </li>
-        </ul>    
+            </button>
+        </div>    
 
 </section>

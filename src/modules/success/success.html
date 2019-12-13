@@ -10,13 +10,16 @@
         "class": "success__text"
     })
 
-    @@include('./clients/clients.html', {
-        "class": "success__client"
-    })
-
-    @@include('./link/link.html', {
-        "class": "link link_bg-color_orange success__link",
-        "text": "עוד לקוחות >>"
-    })
+    <div class="success__wrapper">            
+        
+            @@include('./clients/clients.html', {
+                "class": "success__client"
+            })
+        
+            @@include('./link/link.html', {
+                "class": "link link_bg-color_orange success__link",
+                "text": "עוד לקוחות >>"
+            })
+    </div>    
 
 </section>

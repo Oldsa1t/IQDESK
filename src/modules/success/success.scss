@@ -40,7 +40,19 @@
     .success {
         margin-top: 40px;
         padding-top: 10px;
+        padding-bottom: 0;
+        background: white;
+    }
+
+    .success__wrapper {
+        background: #FCF68D;
+        padding-top: 30px;
         padding-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .success__client {
+        margin: 0;
     }
 
     .success__title {

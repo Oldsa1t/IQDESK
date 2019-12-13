@@ -8,11 +8,9 @@
     text-align: center;
 }
 
-.feedback__slider {
-    width: calc(474px*2 + 60px);
-    margin: 140px auto 0;
-    display: flex;
-    justify-content: space-between;
+.feedback__slider {   
+    width: 1200px; 
+    margin: 140px auto 0;    
 }
 
 .feedback__arrows {
