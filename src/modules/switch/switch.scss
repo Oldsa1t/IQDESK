@@ -29,6 +29,11 @@
         background: #FCF68D;
         clip-path: polygon(100% 39%, 30% 100%, 100% 100%);
     }
+    &__list-inner {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .switch__title {
@@ -141,15 +146,18 @@
 
     .switch__list {
         width: 90%;
-        bottom: -80px;
+        top: 100%;
+        margin-top: -44px;
         align-items: flex-start;
         justify-content: space-between;
     }
 
     .switch__item {
         font-size: 12px;
+        margin-top: 10px;
 
         &_active {
+            margin-top: 0;
             font-size: 16px;
         }
     }

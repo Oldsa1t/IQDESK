@@ -1,37 +1,35 @@
 function tabs() {
-    let tabItem = document.querySelectorAll(".switch__item"),
-    tabList = document.querySelector(".switch__list"),
-    tabWeb = document.querySelector(".switch__laptop"),
-    tabApp = document.querySelector(".switch__phone"),
-    tabSoft = document.querySelector(".switch__soft"),
-    tabContent = document.querySelectorAll(".projects__list");
-
-    function hideTabContent(a) {
-        for (let i = a; i < tabContent.length; i++) {
-            tabContent[i].classList.add("projects__list_visibility_hidden");
-        }
-    }
-
-    hideTabContent(1);
-
-    function showTabContent(b) {
-        if (tabContent[b].classList.contains("projects__list_visibility_hidden")) {
-            tabContent[b].classList.remove("projects__list_visibility_hidden");
-        }
-    }
-    
-    tabList.addEventListener("click", function (event) {
-        let target = event.target;
-        if (target && target.classList.contains("switch__item")) {
-            for (let i = 0; i < tabItem.length; i++) {
-                if (target == tabItem[i]) {
-                    hideTabContent(0);
-                    showTabContent(i);
-                    break;
-                }
-            }
-        }
+    let controls = document.querySelectorAll('.switch__item');
+    let tabs = document.querySelectorAll('.projects__list');
+    controls.forEach(function (control) {
+        control.addEventListener('click', switchActive);
     });
+
+    function switchActive(e) {
+        e.preventDefault();
+        let type = '';
+        if (this.querySelector('.switch__image').classList.contains('switch__laptop')) {
+            type = 'laptop';
+        } else if (this.querySelector('.switch__image').classList.contains('switch__phone')) {
+            type = 'phone';
+        } else if (this.querySelector('.switch__image').classList.contains('switch__soft')) {
+            type = 'soft';
+        }        
+        controls.forEach(function (control) {
+            control.classList.remove('switch__item_active');
+            control.querySelector('.switch__image').classList.remove('switch__laptop_active');
+            control.querySelector('.switch__image').classList.remove('switch__phone_active');
+            control.querySelector('.switch__image').classList.remove('switch__soft_active');
+        });
+        let activeClass = 'switch__' + type + '_active';       
+        this.querySelector('.switch__image').classList.add(activeClass);
+        this.classList.add('switch__item_active');
+        tabs.forEach(function (tab) {
+            tab.classList.remove('projects__list_active');
+        });
+        document.querySelector('.projects__list_' + type).classList.add('projects__list_active');
+    }
+
 }
 
 tabs();

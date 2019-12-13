@@ -1,10 +1,13 @@
 .projects__list {
     width: calc(500px*2 + 80px);
     margin: 220px auto 100px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     transition: 0.3s;
+    display: none;
+    &_active {
+        display: flex;
+    }
 }
 
 .projects__list_visibility_hidden {    

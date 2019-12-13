@@ -10,7 +10,7 @@
 
 .feedback__slider {   
     width: calc(475px*2 + 60px); 
-    margin: 140px auto 0;    
+    margin: 10px auto 0;    
 }
 
 .feedback__arrows {
@@ -52,6 +52,8 @@
 
     .feedback__slider {
         width: auto;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
 
@@ -61,7 +63,9 @@
     }
 
     .feedback__slider {
-        margin-top: 70px;
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 40px;        
     }
 
     .feedback__arrow-left, 

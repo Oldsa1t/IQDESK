@@ -6,30 +6,36 @@
         })
     
         <div class="switch__list">
-            <button class="button switch__item">
-                <div class="switch__image switch__laptop">
-                </div>
-                @@include('./text/text.html', {
-                    "text": "אתרי אינטרנט ",
-                    "class": "switch__text"
-                })                 
-            </button>
-            <button class="button switch__item">
-                <div class="switch__image switch__phone">
-                </div>
-                @@include('./text/text.html', {
-                    "text": "אפליקציות",
-                    "class": "switch__text"
-                })                   
-            </button>
-            <button class="button switch__item">
-                <div class="switch__image switch__soft">
-                </div>
-                @@include('./text/text.html', {
-                    "text": "תוכנות מואמות אישית",
-                    "class": "switch__text"
-                })                
-            </button>
+            <div class="switch__list-inner">
+                <button class="button switch__item">
+                    <div class="switch__image switch__laptop switch__laptop_active">
+                    </div>
+                    @@include('./text/text.html', {
+                        "text": "אתרי אינטרנט ",
+                        "class": "switch__text"
+                    })                 
+                </button>
+            </div>
+            <div class="switch__list-inner">
+                <button class="button switch__item">
+                    <div class="switch__image switch__phone">
+                    </div>
+                    @@include('./text/text.html', {
+                        "text": "אפליקציות",
+                        "class": "switch__text"
+                    })                   
+                </button>
+            </div>
+            <div class="switch__list-inner">
+                <button class="button switch__item">
+                    <div class="switch__image switch__soft">
+                    </div>
+                    @@include('./text/text.html', {
+                        "text": "תוכנות מואמות אישית",
+                        "class": "switch__text"
+                    })                
+                </button>
+            </div>                
         </div>    
 
 </section>

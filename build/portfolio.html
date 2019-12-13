@@ -10,12 +10,6 @@
 <body class="page">
 
     <header class="header">
-
-        <button class="button header__button">
-    <div class="button__item header__button-item"></div>
-    <div class="button__item header__button-item"></div>
-    <div class="button__item header__button-item"></div>
-</button>
     
     <div class="header__wrapper">
 
@@ -44,6 +38,12 @@
         </section>
 
     </div>
+
+    <button class="button header__button">
+    <div class="button__item header__button-item"></div>
+    <div class="button__item header__button-item"></div>
+    <div class="button__item header__button-item"></div>
+</button>    
     
     <div class="header__container">
         <div class="header__skew"></div>
@@ -73,26 +73,32 @@
         <h1 class="title title__h1 switch__title">הפרויקטים שלנו</h1>
     
         <div class="switch__list">
-            <button class="button switch__item">
-                <div class="switch__image switch__laptop">
-                </div>
-                <p class="text switch__text">אתרי אינטרנט </p>                 
-            </button>
-            <button class="button switch__item">
-                <div class="switch__image switch__phone">
-                </div>
-                <p class="text switch__text">אפליקציות</p>                   
-            </button>
-            <button class="button switch__item">
-                <div class="switch__image switch__soft">
-                </div>
-                <p class="text switch__text">תוכנות מואמות אישית</p>                
-            </button>
+            <div class="switch__list-inner">
+                <button class="button switch__item">
+                    <div class="switch__image switch__laptop switch__laptop_active">
+                    </div>
+                    <p class="text switch__text">אתרי אינטרנט </p>                 
+                </button>
+            </div>
+            <div class="switch__list-inner">
+                <button class="button switch__item">
+                    <div class="switch__image switch__phone">
+                    </div>
+                    <p class="text switch__text">אפליקציות</p>                   
+                </button>
+            </div>
+            <div class="switch__list-inner">
+                <button class="button switch__item">
+                    <div class="switch__image switch__soft">
+                    </div>
+                    <p class="text switch__text">תוכנות מואמות אישית</p>                
+                </button>
+            </div>                
         </div>    
 
 </section>
 
-    <section class="projects__list">
+    <section class="projects__list projects__list_laptop projects__list_active">
         <div class="item projects__item">
     <div class="item__image">
         <img class="image" src="./assets/img/laptop.png" alt="">
@@ -160,7 +166,7 @@
 </div>
     </section>
 
-    <section class="projects__list">
+    <section class="projects__list projects__list_phone">
         <div class="item projects__item">
     <div class="item__image">
         <img class="image" src="./assets/img/phone-plus2.png" alt="">
@@ -212,7 +218,7 @@
 </div>        
     </section>
 
-    <section class="projects__list">
+    <section class="projects__list projects__list_soft">
         
     </section>
 
