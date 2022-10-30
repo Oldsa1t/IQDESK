@@ -9,7 +9,7 @@
   "author": "Maxim Nikitin",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "compression": "^1.7.3",
     "fontfacegen": "^0.3.1",
     "fontforge": "0.0.4",
